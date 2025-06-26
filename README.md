@@ -30,7 +30,7 @@ RentRadar solves these with a powerful platform that offers:
 📸 **Virtual Tours & Media** – Check photos, videos, and property walk-throughs  
 📊 **Smart Filters** – Sort by rent, distance, amenities, and more  
 📱 **Mobile-Ready** – Accessible on all devices  
-🛠️ **Landlord Dashboard** – Simple tools to manage listings
+
 
 ---
 
