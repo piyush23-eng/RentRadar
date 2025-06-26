@@ -42,7 +42,7 @@ RentRadar solves these with a powerful platform that offers:
 | Backend | Supabase (Database + Auth + Storage) |
 | Build Tools | Vite |
 | Linting | ESLint |
-| Deployment | Vercel / Netlify (Suggested) |
+| Deployment |  Netlify  |
 | Configuration | TypeScript Config, PostCSS, Tailwind, Vite |
 
 ---
