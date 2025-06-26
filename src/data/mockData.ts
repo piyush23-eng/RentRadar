@@ -1,0 +1,262 @@
+import { Property, Landlord } from '../types';
+
+export const mockLandlords: Landlord[] = [
+  {
+    id: '1',
+    name: 'Sarah Johnson',
+    email: 'sarah@example.com',
+    phone: '(555) 123-4567',
+    profileImage: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=400',
+    verified: true,
+    rating: 4.8,
+    reviewCount: 24,
+    responseTime: '< 1 hour',
+    joinedDate: '2022-03-15'
+  },
+  {
+    id: '2',
+    name: 'Michael Chen',
+    email: 'michael@example.com',
+    phone: '(555) 987-6543',
+    profileImage: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+    verified: true,
+    rating: 4.9,
+    reviewCount: 31,
+    responseTime: '< 30 min',
+    joinedDate: '2021-08-20'
+  },
+  {
+    id: '3',
+    name: 'Emma Rodriguez',
+    email: 'emma@example.com',
+    phone: '(555) 456-7890',
+    profileImage: 'https://images.pexels.com/photos/2748730/pexels-photo-2748730.jpeg?auto=compress&cs=tinysrgb&w=400',
+    verified: true,
+    rating: 4.7,
+    reviewCount: 18,
+    responseTime: '< 2 hours',
+    joinedDate: '2022-01-10'
+  }
+];
+
+export const mockProperties: Property[] = [
+  {
+    id: '1',
+    title: 'Modern Studio Near Campus',
+    address: '123 University Ave',
+    city: 'College Station',
+    state: 'TX',
+    zipCode: '77840',
+    price: 850,
+    bedrooms: 0,
+    bathrooms: 1,
+    squareFeet: 450,
+    propertyType: 'studio',
+    images: [
+      'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Beautiful modern studio apartment perfect for students. Recently renovated with all new appliances and furniture. Located just 5 minutes from campus.',
+    amenities: ['WiFi', 'Laundry', 'AC/Heating', 'Kitchen', 'Furnished'],
+    landlord: mockLandlords[0],
+    available: true,
+    availableDate: '2024-08-15',
+    utilities: ['Water', 'Trash', 'Internet'],
+    petPolicy: 'No pets allowed',
+    parking: true,
+    furnished: true,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.8,
+    reviewCount: 12,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 5,
+      drivingTime: 2
+    },
+    coordinates: { lat: 30.6280, lng: -96.3344 }
+  },
+  {
+    id: '2',
+    title: 'Spacious 2BR Apartment',
+    address: '456 College Blvd',
+    city: 'College Station',
+    state: 'TX',
+    zipCode: '77840',
+    price: 1250,
+    bedrooms: 2,
+    bathrooms: 2,
+    squareFeet: 950,
+    propertyType: 'apartment',
+    images: [
+      'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Perfect for roommates! This spacious 2-bedroom apartment features an open floor plan, modern kitchen, and in-unit washer/dryer. Great for graduate students.',
+    amenities: ['WiFi', 'In-unit Laundry', 'AC/Heating', 'Dishwasher', 'Pool', 'Gym'],
+    landlord: mockLandlords[1],
+    available: true,
+    availableDate: '2024-09-01',
+    utilities: ['Water', 'Trash'],
+    petPolicy: 'Cats allowed with deposit',
+    parking: true,
+    furnished: false,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.9,
+    reviewCount: 8,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 12,
+      drivingTime: 4
+    },
+    coordinates: { lat: 30.6180, lng: -96.3244 }
+  },
+  {
+    id: '3',
+    title: 'Cozy Student House',
+    address: '789 Northgate Dr',
+    city: 'College Station',
+    state: 'TX',
+    zipCode: '77840',
+    price: 2200,
+    bedrooms: 4,
+    bathrooms: 3,
+    squareFeet: 1800,
+    propertyType: 'house',
+    images: [
+      'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Traditional student house perfect for a group of friends. Features a large living area, full kitchen, and backyard. Walking distance to Northgate entertainment district.',
+    amenities: ['WiFi', 'Laundry Room', 'AC/Heating', 'Backyard', 'Storage'],
+    landlord: mockLandlords[2],
+    available: true,
+    availableDate: '2024-08-01',
+    utilities: ['Water', 'Trash', 'Internet'],
+    petPolicy: 'Pets allowed with deposit',
+    parking: true,
+    furnished: false,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.6,
+    reviewCount: 15,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 8,
+      drivingTime: 3
+    },
+    coordinates: { lat: 30.6320, lng: -96.3384 }
+  },
+  {
+    id: '4',
+    title: 'Luxury Shared Room',
+    address: '321 Campus View Ln',
+    city: 'College Station',
+    state: 'TX',
+    zipCode: '77840',
+    price: 650,
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 300,
+    propertyType: 'shared-room',
+    images: [
+      'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Affordable shared room in a luxury apartment complex. Perfect for budget-conscious students who want premium amenities.',
+    amenities: ['WiFi', 'Pool', 'Gym', 'Study Rooms', 'Game Room', 'Shuttle Service'],
+    landlord: mockLandlords[0],
+    available: true,
+    availableDate: '2024-08-20',
+    utilities: ['All utilities included'],
+    petPolicy: 'No pets allowed',
+    parking: false,
+    furnished: true,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.4,
+    reviewCount: 6,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 15,
+      drivingTime: 5
+    },
+    coordinates: { lat: 30.6150, lng: -96.3200 }
+  },
+  {
+    id: '5',
+    title: 'Updated 1BR Downtown',
+    address: '555 Main Street',
+    city: 'Bryan',
+    state: 'TX',
+    zipCode: '77801',
+    price: 950,
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 650,
+    propertyType: 'apartment',
+    images: [
+      'https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Newly updated 1-bedroom in historic downtown Bryan. Great for graduate students who prefer a quieter setting with easy campus access.',
+    amenities: ['WiFi', 'AC/Heating', 'Updated Kitchen', 'Hardwood Floors'],
+    landlord: mockLandlords[1],
+    available: true,
+    availableDate: '2024-09-15',
+    utilities: ['Water', 'Trash'],
+    petPolicy: 'Small pets allowed',
+    parking: true,
+    furnished: false,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.7,
+    reviewCount: 9,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 25,
+      drivingTime: 8
+    },
+    coordinates: { lat: 30.6744, lng: -96.3698 }
+  },
+  {
+    id: '6',
+    title: 'Premium Studio with Balcony',
+    address: '888 University Plaza',
+    city: 'College Station',
+    state: 'TX',
+    zipCode: '77840',  
+    price: 1100,
+    bedrooms: 0,
+    bathrooms: 1,
+    squareFeet: 550,
+    propertyType: 'studio',
+    images: [
+      'https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/2631748/pexels-photo-2631748.jpeg?auto=compress&cs=tinysrgb&w=800'
+    ],
+    description: 'Premium studio with private balcony overlooking campus. High-end finishes and smart home features. Perfect for discerning students.',
+    amenities: ['WiFi', 'Smart Home', 'Balcony', 'Premium Appliances', 'Concierge'],
+    landlord: mockLandlords[2],
+    available: false,
+    availableDate: '2024-12-01',
+    utilities: ['All utilities included'],
+    petPolicy: 'No pets allowed',
+    parking: true,
+    furnished: true,
+    studentFriendly: true,
+    verified: true,
+    rating: 4.9,
+    reviewCount: 4,
+    distance: {
+      university: 'Texas A&M University',
+      walkingTime: 3,
+      drivingTime: 1
+    },
+    coordinates: { lat: 30.6290, lng: -96.3350 }
+  }
+];
